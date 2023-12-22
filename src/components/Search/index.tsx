@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { AnyAction, ThunkDispatch } from "@reduxjs/toolkit";
 
-import { updateSearchValue } from "store/slices/searchCryptosSlice";
-import { getCurrentTheme, getSearchCryptosData } from "store/selectors";
-import { RootState } from "store";
+import { updateSearchValue } from "../../redux/slices/searchCryptosSlice";
+import { getCurrentTheme, getSearchCryptosData } from "../../redux/selectors";
+import { RootState } from "../../redux";
 
 import styles from "./Search.module.scss";
 

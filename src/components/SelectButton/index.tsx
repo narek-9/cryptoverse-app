@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { useSelector } from "react-redux";
 
-import { getCurrentTheme } from "store/selectors";
+import { getCurrentTheme } from "../../redux/selectors";
 
 import styles from "./SelectButton.module.scss";
 

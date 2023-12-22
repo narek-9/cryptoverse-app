@@ -1,8 +1,8 @@
 import { FC } from "react";
 
-import { coinsItem, searchCoin } from "types";
+import { coinsItem, searchCoin } from "../../types";
 
-import { TableItem } from "components/TableItem";
+import { TableItem } from "../../components/TableItem";
 
 import styles from "./CryptosTable.module.scss";
 

@@ -1,12 +1,12 @@
 import React, { FC, useEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
 
-import { getCurrentTheme } from "store/selectors";
-import { coinsItem, searchCoin } from "types";
+import { getCurrentTheme } from "../../redux/selectors";
+import { coinsItem, searchCoin } from "../../types";
 
-import { PaginationListItem } from "components/PaginationListItem";
+import { PaginationListItem } from "../../components/PaginationListItem";
 
-import paginationArrow from "assets/pagination-arrow.png";
+import paginationArrow from "../../assets/pagination-arrow.png";
 import styles from "./Pagination.module.scss";
 
 interface PaginationProps<T> {

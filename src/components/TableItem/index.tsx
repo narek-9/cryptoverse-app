@@ -2,9 +2,9 @@ import { FC } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-import { getCurrentTheme } from "store/selectors";
-import { formatMarketCap } from "utils/formatMarketCap";
-import { coinsItem, searchCoin } from "types";
+import { getCurrentTheme } from "../../redux/selectors";
+import { formatMarketCap } from "../../utils/formatMarketCap";
+import { coinsItem, searchCoin } from "../../types";
 
 import styles from "./TableItem.module.scss";
 

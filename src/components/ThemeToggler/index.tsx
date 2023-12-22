@@ -1,13 +1,13 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 
-import { setTheme, toggleTheme } from "store/slices/themeSlice";
-import { getCurrentTheme } from "store/selectors";
+import { setTheme, toggleTheme } from "../../redux/slices/themeSlice";
+import { getCurrentTheme } from "../../redux/selectors";
 
-import whiteSun from "assets/white-sun.png";
-import blackSun from "assets/black-sun.png";
-import whiteMoon from "assets/white-moon.png";
-import blackMoon from "assets/black-moon.png";
+import whiteSun from "../../assets/white-sun.png";
+import blackSun from "../../assets/black-sun.png";
+import whiteMoon from "../../assets/white-moon.png";
+import blackMoon from "../../assets/black-moon.png";
 import styles from "./ThemeToggler.module.scss";
 
 export const ThemeToggler = () => {

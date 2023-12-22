@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-import { getCurrentTheme } from "store/selectors";
+import { getCurrentTheme } from "./redux/selectors";
 import { routes } from "./routes";
 
-import { Header } from "components/Header";
+import { Header } from "./components/Header";
 
 import styles from "./App.module.scss";
 

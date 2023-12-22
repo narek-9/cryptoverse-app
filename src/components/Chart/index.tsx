@@ -10,11 +10,11 @@ import {
 } from "chart.js";
 import { AxiosError } from "axios";
 
-import { getCryptoChartData } from "api";
-import { cryptoChartData } from "types";
+import { getCryptoChartData } from "../../api";
+import { cryptoChartData } from "../../types";
 
-import { SelectButton } from "components/SelectButton";
-import { Loading } from "components/Loading";
+import { SelectButton } from "../../components/SelectButton";
+import { Loading } from "../../components/Loading";
 
 import styles from "./Chart.module.scss";
 

@@ -3,12 +3,12 @@ import { useSelector } from "react-redux";
 import { AxiosError } from "axios";
 import ReactHtmlParser from "react-html-parser";
 
-import { getCurrentTheme } from "store/selectors";
-import { getCryptoData } from "api";
-import { coin } from "types";
+import { getCurrentTheme } from "../../redux/selectors";
+import { getCryptoData } from "../../api";
+import { coin } from "../../types";
 
-import { ErrorBoundary } from "components/ErrorBoundary";
-import { Loading } from "components/Loading";
+import { ErrorBoundary } from "../../components/ErrorBoundary";
+import { Loading } from "../../components/Loading";
 
 import styles from "./CoinInfo.module.scss";
 

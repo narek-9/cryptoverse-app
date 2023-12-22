@@ -2,7 +2,7 @@ import { FC } from "react";
 import { useNavigate } from "react-router-dom";
 import { AxiosError } from "axios";
 
-import prevPage from "assets/prevPage-arrow.png";
+import prevPage from "../../assets/prevPage-arrow.png";
 import styles from "./ErrorBoundary.module.scss";
 
 interface ErrorBoundaryProps {

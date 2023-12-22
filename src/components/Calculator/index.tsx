@@ -1,9 +1,9 @@
 import { FC, useEffect, useState } from "react";
 
-import { coinsItem } from "types";
+import { coinsItem } from "../../types";
 
-import downArrow from "assets/down-arrow.png";
-import calculator from "assets/calculator.png";
+import downArrow from "../../assets/down-arrow.png";
+import calculator from "../../assets/calculator.png";
 import styles from "./Calculator.module.scss";
 
 interface CalculatorProps {

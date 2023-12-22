@@ -3,14 +3,14 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { AxiosError } from "axios";
 
-import { getCryptosData } from "store/selectors";
+import { getCryptosData } from "../../redux/selectors";
 
-import { Chart as ChartItem } from "components/Chart";
-import { CoinInfo } from "components/CoinInfo";
-import { Calculator } from "components/Calculator";
-import { ErrorBoundary } from "components/ErrorBoundary";
+import { Chart as ChartItem } from "../../components/Chart";
+import { CoinInfo } from "../../components/CoinInfo";
+import { Calculator } from "../../components/Calculator";
+import { ErrorBoundary } from "../../components/ErrorBoundary";
 
-import prevPage from "assets/prevPage-arrow.png";
+import prevPage from "../../assets/prevPage-arrow.png";
 import styles from "./CoinPage.module.scss";
 
 export const CoinPage = () => {

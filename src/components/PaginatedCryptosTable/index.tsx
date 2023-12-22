@@ -2,14 +2,14 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { AnyAction, ThunkDispatch } from "@reduxjs/toolkit";
 
-import { fetchSearchCryptosData } from "store/slices/searchCryptosSlice";
-import { getCryptosData, getSearchCryptosData } from "store/selectors";
-import { RootState } from "store";
+import { fetchSearchCryptosData } from "../../redux/slices/searchCryptosSlice";
+import { getCryptosData, getSearchCryptosData } from "../../redux/selectors";
+import { RootState } from "../../redux";
 
-import { CryptosTable } from "components/CryptosTable";
-import { Pagination } from "components/Pagination";
-import { ErrorBoundary } from "components/ErrorBoundary";
-import { Loading } from "components/Loading";
+import { CryptosTable } from "../../components/CryptosTable";
+import { Pagination } from "../../components/Pagination";
+import { ErrorBoundary } from "../../components/ErrorBoundary";
+import { Loading } from "../../components/Loading";
 
 export const PaginatedCryptosTable = () => {
   const [leftLimit, setLeftLimit] = useState<number>(

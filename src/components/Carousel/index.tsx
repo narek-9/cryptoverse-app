@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import AliceCarousel from "react-alice-carousel";
 
-import { getCryptosData, getCurrentTheme } from "store/selectors";
+import { getCryptosData, getCurrentTheme } from "../../redux/selectors";
 
-import { Loading } from "components/Loading";
+import { Loading } from "../../components/Loading";
 
 import "react-alice-carousel/lib/alice-carousel.css";
 import styles from "./Carousel.module.scss";

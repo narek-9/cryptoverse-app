@@ -1,18 +1,19 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { AnyAction, ThunkDispatch } from "@reduxjs/toolkit";
+import { ThunkDispatch } from "@reduxjs/toolkit";
+import { AnyAction } from "../../../node_modules/redux";
 
-import { useTimeCache } from "hooks/useTimeCache";
-import { fetchCryptosData } from "store/slices/cryptosSlice";
-import { getCryptosData, getCurrentTheme } from "store/selectors";
-import { RootState } from "store";
+import { useTimeCache } from "../../hooks/useTimeCache";
+import { fetchCryptosData } from "../../redux/slices/cryptosSlice";
+import { getCryptosData, getCurrentTheme } from "../../redux/selectors";
+import { RootState } from "../../redux";
 
-import { Search } from "components/Search";
-import { PaginatedCryptosTable } from "components/PaginatedCryptosTable";
-import { Calculator } from "components/Calculator";
-import { Carousel } from "components/Carousel";
-import { ErrorBoundary } from "components/ErrorBoundary";
-import { Loading } from "components/Loading";
+import { Search } from "../../components/Search";
+import { PaginatedCryptosTable } from "../../components/PaginatedCryptosTable";
+import { Calculator } from "../../components/Calculator";
+import { Carousel } from "../../components/Carousel";
+import { ErrorBoundary } from "../../components/ErrorBoundary";
+import { Loading } from "../../components/Loading";
 
 import styles from "./HomePage.module.scss";
 
