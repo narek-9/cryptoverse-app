@@ -1,0 +1,51 @@
+.Table {
+  width: 100%;
+  margin-top: 25px;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &__smallDeviceCol {
+    width: 100% !important;
+  }
+
+  &__opacity {
+    opacity: 0 !important;
+    transition: opacity 0.3s ease;
+  }
+
+  &__default {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  colgroup col:first-child {
+    width: 40%;
+  }
+
+  colgroup col:not(:first-child) {
+    width: 20%;
+  }
+
+  thead tr th {
+    padding: 20px;
+    font-weight: 800;
+    border: none;
+    background-color: rgb(238, 188, 29);
+  }
+
+  thead tr th:first-child {
+    padding-left: 15px;
+    text-align: left;
+  }
+
+  thead tr th:not(:first-child) {
+    padding-right: 15px;
+    text-align: right;
+  }
+}
+
+.noCoinsText {
+  color: rgb(238, 188, 29);
+  text-align: center;
+}

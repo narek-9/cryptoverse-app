@@ -1,0 +1,101 @@
+.tableItem {
+  &.darkThemeColors {
+    border-bottom: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.703);
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(195, 195, 195, 0.703);
+    }
+  }
+
+  &.lightThemeColors {
+    border-bottom: 1px solid #ccc;
+    background-color: #16171a;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #000;
+    }
+  }
+
+  td {
+    padding: 25px 0;
+    border: none;
+  }
+
+  td:first-child {
+    display: flex;
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  td:not(:first-child) {
+    text-align: right;
+  }
+
+  td:last-child {
+    padding-right: 10px;
+  }
+
+  &__img {
+    width: 50px;
+    height: 50px;
+  }
+
+  &__text {
+    margin-left: 15px;
+
+    &__symbol {
+      padding: 0;
+      margin: 0;
+      font-size: 22px;
+
+      &__lightThemeColors {
+        color: white;
+      }
+
+      &__darkThemeColors {
+        color: black;
+      }
+    }
+
+    &__name {
+      &__lightThemeColors {
+        color: darkgrey;
+      }
+
+      &__darkThemeColors {
+        color: black;
+      }
+    }
+  }
+
+  &__price {
+    &__lightThemeColors {
+      color: white;
+    }
+
+    &__darkThemeColors {
+      color: black;
+    }
+  }
+
+  .green {
+    color: green;
+  }
+
+  .red {
+    color: red;
+  }
+
+  &__marketCap {
+    &__lightThemeColors {
+      color: white;
+    }
+
+    &__darkThemeColors {
+      color: black;
+    }
+  }
+}

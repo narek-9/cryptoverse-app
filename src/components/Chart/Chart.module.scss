@@ -1,0 +1,17 @@
+.Chart {
+  flex: 4;
+  padding: 30px;
+
+  canvas {
+    width: 100% !important;
+    height: 93% !important;
+    max-height: 615px;
+  }
+
+  &__buttonsWrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 25px;
+  }
+}

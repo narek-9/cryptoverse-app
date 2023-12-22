@@ -1,0 +1,32 @@
+.coinPage {
+  display: flex;
+  margin-top: 50px;
+
+  .backArrow {
+    position: absolute;
+    top: 1.5%;
+    left: 2%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    background-color: rgb(238, 188, 29);
+
+    &:hover {
+      transform: translateX(-10%);
+      transition: transform 0.3s ease;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .coinPage {
+    display: block;
+  }
+}

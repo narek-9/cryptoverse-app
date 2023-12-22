@@ -1,0 +1,43 @@
+.selectButton {
+  width: 20%;
+  padding: 10px;
+  border: 1px solid gold;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 700;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: transparent;
+
+  &.lightThemeColors {
+    color: white;
+
+    &:hover {
+      transition: 0.3s;
+      color: white;
+      background-color: gold;
+    }
+
+    &.selected {
+      transition: 0.3s;
+      color: white;
+      background-color: gold;
+    }
+  }
+
+  &.darkThemeColors {
+    color: black;
+
+    &:hover {
+      transition: 0.3s;
+      color: black;
+      background-color: gold;
+    }
+
+    &.selected {
+      transition: 0.3s;
+      color: black;
+      background-color: gold;
+    }
+  }
+}

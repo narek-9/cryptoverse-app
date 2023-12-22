@@ -1,0 +1,46 @@
+.Search {
+  display: flex;
+  align-items: center;
+
+  &__input {
+    flex: 10;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    background-color: transparent;
+
+    &.darkThemeColors {
+      color: black;
+    }
+
+    &.lightThemeColors {
+      color: white;
+    }
+  }
+
+  &__button {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(238, 188, 29);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Search {
+    display: block;
+
+    &__input {
+      width: 100%;
+    }
+
+    &__button {
+      margin: 15px 0;
+    }
+  }
+}

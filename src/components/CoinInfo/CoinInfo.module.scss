@@ -1,0 +1,66 @@
+.Info {
+  flex: 2;
+  word-break: break-all;
+  padding: 30px;
+  border-right: 2px solid gray;
+
+  &.lightThemeColors {
+    color: white;
+  }
+
+  &.darkThemeColors {
+    color: black;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__name {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  &__description {
+    font-size: 24px;
+
+    small {
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+
+  &__rank,
+  &__date,
+  &__count,
+  &__price {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .Info {
+    &__name {
+      font-size: 2rem;
+    }
+
+    &__description {
+      font-size: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .Info {
+    &__rank,
+    &__date,
+    &__count,
+    &__price {
+      font-size: 1.5rem;
+    }
+  }
+}
