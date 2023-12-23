@@ -14,7 +14,7 @@ export const Search = () => {
   const currentTheme = useSelector(getCurrentTheme);
   const searchCryptosData = useSelector(getSearchCryptosData);
 
-  const dispatch = useDispatch<ThunkDispatch<RootState, any, AnyAction>>();
+  const dispatch = useDispatch<ThunkDispatch<RootState, unknown, AnyAction>>();
 
   const handleSearch = (searchValue: string) => {
     dispatch(updateSearchValue(searchValue));

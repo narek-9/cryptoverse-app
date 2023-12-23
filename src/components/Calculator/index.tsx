@@ -56,6 +56,7 @@ export const Calculator: FC<CalculatorProps> = ({ cryptos }) => {
       return true;
     }
 
+    // @ts-ignore
     const char = e.nativeEvent.data as string;
 
     if (char === " ") {
@@ -120,6 +121,7 @@ export const Calculator: FC<CalculatorProps> = ({ cryptos }) => {
               id="firstAmount"
               value={firstInputValue}
               onChange={(e) => {
+                // @ts-ignore
                 if (!firstInputValue && e.nativeEvent.data === ".") {
                   setFirstInputValue("0.");
                 } else if (isValidInputValue(e)) {

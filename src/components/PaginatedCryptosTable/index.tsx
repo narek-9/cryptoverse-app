@@ -27,7 +27,7 @@ export const PaginatedCryptosTable = () => {
   const cryptosData = useSelector(getCryptosData);
   const searchCryptosData = useSelector(getSearchCryptosData);
 
-  const dispatch = useDispatch<ThunkDispatch<RootState, any, AnyAction>>();
+  const dispatch = useDispatch<ThunkDispatch<RootState, unknown, AnyAction>>();
 
   useEffect(() => {
     dispatch(fetchSearchCryptosData(searchCryptosData.data.searchValue));

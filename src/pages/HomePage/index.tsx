@@ -21,7 +21,7 @@ export const HomePage = () => {
   const cryptosData = useSelector(getCryptosData);
   const currentTheme = useSelector(getCurrentTheme);
 
-  const dispatch = useDispatch<ThunkDispatch<RootState, any, AnyAction>>();
+  const dispatch = useDispatch<ThunkDispatch<RootState, unknown, AnyAction>>();
 
   const { lastFetchTime, updateLastFetchTime } = useTimeCache();
 

@@ -12,6 +12,7 @@ interface PaginationItemProps {
 export const PaginationListItem: FC<PaginationItemProps> = forwardRef(
   ({ buttonClassNames, isButtonDisabled, onClick, children }, ref) => {
     return (
+        // @ts-ignore
       <li className={styles.ListItem} ref={ref}>
         <button
           className={buttonClassNames}

@@ -144,6 +144,7 @@ export const Pagination: FC<PaginationProps<coinsItem | searchCoin>> = ({
 
               return (
                 <PaginationListItem
+                  // @ts-ignore
                   ref={(el) => (pageRefs.current[index] = el)}
                   buttonClassNames={`${
                     currentTheme === "dark"
